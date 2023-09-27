@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="screen">
+        <!-- heading -->
+        <h1>Calculate Here!!!</h1>
+
+        <!-- TOTAL calculator -->
+        <div class="calc">
+
+            <!-- output screen which shows the output -->
+            <div>
+                <input class="output" type="text" placeholder="0">
+            </div>
+
+            <!-- buttons row which contain 4 buttons.. -->
+            <div class="buttons">
+                <button id="allclear" onclick="allClear()">AC</button>
+                <button id="clear" onclick="clearOne()">C</button>
+                <button class="operator" onclick="num('/')">/</button>
+                <button class="operator" onclick="num('*')">x</button>
+            </div>
+            <!-- buttons row which contain 4 buttons.. -->
+            <div class="buttons">
+                <button onclick="num('7')">7</button>
+                <button onclick="num('8')">8</button>
+                <button onclick="num('9')">9</button>
+                <button class="operator" onclick="num('-')">-</button>
+            </div>
+            <!-- buttons row which contain 4 buttons.. -->
+            <div class="buttons">
+                <button onclick="num('4')">4</button>
+                <button onclick="num('5')">5</button>
+                <button onclick="num('6')">6</button>
+                <button class="operator" onclick="num('+')">+</button>
+            </div>
+            <!-- buttons row which contain 4 buttons.. -->
+            <div class="buttons">
+                <button onclick="num('1')">1</button>
+                <button onclick="num('2')">2</button>
+                <button onclick="num('3')">3</button>
+                <button id="percentage" class="operator" onclick="num('%'), percent()">%</button>
+            </div>
+            <!-- buttons row which contain 4 buttons.. -->
+            <div class="buttons">
+                <button onclick="num( '00' )">00</button>
+                <button onclick="num('0')">0</button>
+                <button onclick="num('.')">.</button>
+                <button id="equal" onclick="equal()">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+
+</html>
